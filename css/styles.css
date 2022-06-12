@@ -35,14 +35,18 @@ p {
 
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin-left: 0;
   margin-right: 0;
   margin: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  
 }
 
 .section {
   padding-bottom: 94px;
+ padding-top: 94px;
 }
 
 /* logo */
@@ -73,11 +77,6 @@ p {
   display: flex;
   margin-left: 93px;
 }
-
-
-/* .side-nav .item:not(:last-child) {
-  margin-right: 50px;
-} */
 
 .side-nav .item + .item {
   margin-left: 50px;
@@ -195,11 +194,9 @@ p {
 
 
 /* advantages */
-.advantages {
-  padding-top: 0;
-  padding-bottom: 0;
+
+.advantages { 
   margin-top: 94px;
-  margin-bottom: 94px;
 }
 
 .advatages-list {
@@ -207,9 +204,8 @@ p {
   margin: -15px;
 }
 
-
 .advatages-list .item {
-  width: calc((1170px - 90px) / 4);
+  width: calc((100% - 3 * 30px) / 4);
   margin: 15px;
   background-color: tomato;
 }
@@ -230,17 +226,21 @@ p {
 }
 
 /* what we do section */
+
+.do {
+  background-color: aqua;
+}
+
 .section-list {
   display: flex;
-  margin-right: -30px;
+  margin: -15px;
 }
 
 
 .section-list .item {
-  margin-right: 30px;
+  width: calc((100% - 2 * 30px) / 3);
+  margin: 15px;
   margin-top: 50px;
-  width: calc((1170px - 60px) / 3);
-  
 }
 
 
@@ -257,7 +257,7 @@ p {
 }
 
 .team-list .item {
-    width: calc((1170px - 90px) / 4);
+    width: calc((100% - 3 * 30px) / 4);
     margin: 15px;
     margin-top: 50px;
 }
@@ -286,6 +286,8 @@ p {
   line-height: 1.18;
   text-align: center;
 }
+
+/* footer */
 
 .footer {
   background-color: var(--banner-color);
@@ -335,12 +337,37 @@ display: inline-block;
   margin-top: 20px;
 }
 
+.footer-title .item:not(:nth-child(1)) {
+  margin-top: 9px;
+}
+
+
 .footer-title .mail-footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
 /* portfolio css */
+
+/* button-nav */
+
+
+.button-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.button-nav .item + .item {
+  margin-left: 8px;
+}
+
 /* image section */
+
+
+.image {
+  margin-top: 34px;
+}
+
+
 
 .image-title {
   color: var(--primary-text-color);
@@ -357,3 +384,28 @@ display: inline-block;
   font-size: 16px;
   line-height: 1.88;
 }
+
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  }
+
+
+.image-list .flex-item {
+  width: calc((100% - 2 * 30px) / 3);
+background-color: tomato;
+margin: 15px;
+}
+
+
+.image-list:nth-child(3n) {
+  margin-right: 0;
+}
+
+.flex-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+
+
