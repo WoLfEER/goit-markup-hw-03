@@ -35,14 +35,13 @@ p {
 
 
 .container {
-  width: 1200px;
+  width: 1170px;
   margin-left: 0;
   margin-right: 0;
   margin: auto;
 }
 
 .section {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -75,10 +74,6 @@ p {
   margin-left: 93px;
 }
 
-.side-nav .item {
-  /* margin-right: 50px; */
-  background-color: tomato;
-}
 
 /* .side-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -117,7 +112,7 @@ p {
 
 .login-nav {
   display: flex;
-  margin-left: 331px;
+  margin-left: auto;
 }
 
 .login-nav .item + .item {
@@ -204,6 +199,19 @@ p {
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.advatages-list {
+  display: flex;
+  margin: -15px;
+}
+
+
+.advatages-list .item {
+  width: calc((1170px - 90px) / 4);
+  margin: 15px;
+  background-color: tomato;
 }
 
 .advantages-title {
@@ -221,7 +229,39 @@ p {
   margin-top: 10px;
 }
 
+/* what we do section */
+.section-list {
+  display: flex;
+  margin-right: -30px;
+}
+
+
+.section-list .item {
+  margin-right: 30px;
+  margin-top: 50px;
+  width: calc((1170px - 60px) / 3);
+  
+}
+
+
 /* team */
+
+.container .team {
+  background-color: red;
+}
+
+.team-list {
+  display: flex;
+  align-items: center;
+  margin: -15px;
+}
+
+.team-list .item {
+    width: calc((1170px - 90px) / 4);
+    margin: 15px;
+    margin-top: 50px;
+}
+
 
 .section-title {
   font-weight: 700;
