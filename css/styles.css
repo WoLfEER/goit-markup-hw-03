@@ -35,6 +35,10 @@ p {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
 }
@@ -387,8 +391,9 @@ p {
 
 /* image section */
 
-.image {
-  margin-top: 34px;
+.card {
+  border: 1px solid #EEEEEE;
+  padding:24px 20px  
 }
 
 .image-title {
