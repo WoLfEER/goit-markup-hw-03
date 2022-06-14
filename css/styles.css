@@ -3,6 +3,7 @@
   --accent-color: #2196f3;
   --secondary-text-color: #757575;
   --banner-color: #2f303a;
+  --secondary-banner-color:#F5F4FA;
 }
 
 ::selection {
@@ -46,7 +47,7 @@ p {
 
 .section {
   padding-bottom: 94px;
- padding-top: 94px;
+  padding-top: 94px;
 }
 
 /* logo */
@@ -68,9 +69,10 @@ p {
 /* site nav */
 
 .main-nav {
-  display: flex;
-  margin-top: 24px;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+
 }
 
 .side-nav {
@@ -83,9 +85,9 @@ p {
 }
  
 .side-nav .link {
-  display: block;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom:32px;
 
 
   color: var(--primary-text-color);
@@ -105,7 +107,6 @@ p {
 .link:focus {
   color: var(--accent-color);
 }
-
 
 /* login-nav */
 
@@ -132,12 +133,19 @@ p {
   color: var(--accent-color);
 }
 
-/*adv sect */
+/* HERO */
 
-.hero {
-  background-color: #2f303a;
-  text-align:center;
-  margin-top:25px;
+.background {
+  background-color:var(--banner-color);
+}
+
+
+.hero .container {
+     text-align: center;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      margin-top: 0px;
+      margin-bottom: 0px;
 }
 
 .hero-title {
@@ -195,9 +203,6 @@ p {
 
 /* advantages */
 
-.advantages { 
-  margin-top: 94px;
-}
 
 .advatages-list {
   display: flex;
@@ -207,7 +212,7 @@ p {
 .advatages-list .item {
   width: calc((100% - 3 * 30px) / 4);
   margin: 15px;
-  background-color: tomato;
+  /* background-color: tomato; */
 }
 
 .advantages-title {
@@ -228,14 +233,13 @@ p {
 /* what we do section */
 
 .do {
-  background-color: aqua;
+  padding-top: 0;
 }
 
 .section-list {
   display: flex;
   margin: -15px;
 }
-
 
 .section-list .item {
   width: calc((100% - 2 * 30px) / 3);
@@ -246,8 +250,14 @@ p {
 
 /* team */
 
-.container .team {
-  background-color: red;
+.team {
+  background-color: var(--secondary-banner-color)
+}
+
+.team .team-item{
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list {
@@ -256,10 +266,9 @@ p {
   margin: -15px;
 }
 
-.team-list .item {
-    width: calc((100% - 3 * 30px) / 4);
+.team-list .team-item {
+    width: 270px;
     margin: 15px;
-    margin-top: 50px;
 }
 
 
@@ -277,6 +286,7 @@ p {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -284,8 +294,11 @@ p {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
+  text-align: center; 
+  margin-bottom: 30px;
 }
+
+
 
 /* footer */
 
@@ -293,9 +306,18 @@ p {
   background-color: var(--banner-color);
 }
 
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* .footer-list {
+  margin-bottom: 9px;
+} */
+
+
 .footer-logo {
-display: inline-block;
-  margin-top: 60px;
+  display: inline-block;  
   color: var(--accent-color);
 
   text-decoration: none;
@@ -303,12 +325,10 @@ display: inline-block;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.49;
- 
 }
 
 .footer-color{
   color: #000000;
-  width: 1600px;
 
   text-decoration: none;
   font-family: 'Raleway';
@@ -337,7 +357,7 @@ display: inline-block;
   margin-top: 20px;
 }
 
-.footer-title .item:not(:nth-child(1)) {
+.footer-title .footer-list + .footer-list {
   margin-top: 9px;
 }
 
@@ -393,8 +413,8 @@ display: inline-block;
 
 
 .image-list .flex-item {
-  width: calc((100% - 2 * 30px) / 3);
-background-color: tomato;
+width: 370px;
+/* background-color: tomato; */
 margin: 15px;
 }
 
@@ -406,6 +426,3 @@ margin: 15px;
 .flex-item:nth-child(3n) {
   margin-right: 0;
 }
-
-
-
