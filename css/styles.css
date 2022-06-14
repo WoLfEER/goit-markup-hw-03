@@ -3,7 +3,7 @@
   --accent-color: #2196f3;
   --secondary-text-color: #757575;
   --banner-color: #2f303a;
-  --secondary-banner-color:#F5F4FA;
+  --secondary-banner-color: #f5f4fa;
 }
 
 ::selection {
@@ -34,7 +34,6 @@ p {
   margin: 0;
 }
 
-
 .container {
   width: 1200px;
   margin-left: 0;
@@ -42,7 +41,6 @@ p {
   margin: auto;
   padding-right: 15px;
   padding-left: 15px;
-  
 }
 
 .section {
@@ -69,26 +67,24 @@ p {
 /* site nav */
 
 .main-nav {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ECECEC;
-
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .side-nav {
   display: flex;
   margin-left: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .side-nav .item + .item {
   margin-left: 50px;
 }
- 
-.side-nav .link {
-  display: inline-block;
-  padding-top: 32px;
-  padding-bottom:32px;
 
+.side-nav .link {
+  display: block;
 
   color: var(--primary-text-color);
   text-decoration: none;
@@ -97,7 +93,6 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
 
 .side-nav .link.current {
   color: var(--accent-color);
@@ -136,16 +131,15 @@ p {
 /* HERO */
 
 .background {
-  background-color:var(--banner-color);
+  background-color: var(--banner-color);
 }
 
-
 .hero .container {
-     text-align: center;
-      padding-top: 200px;
-      padding-bottom: 200px;
-      margin-top: 0px;
-      margin-bottom: 0px;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .hero-title {
@@ -165,6 +159,7 @@ p {
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: 0;
 
   min-width: 200px;
   padding: 10px 32px 10px 32px;
@@ -176,10 +171,12 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.06em
+  letter-spacing: 0.06em;
 }
 
 .button-secondary {
+  padding: 6px 22px;
+
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -187,10 +184,18 @@ p {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: 0;
 }
 
-.button:hover,
+/* .button:hover,
 :focus {
+  cursor: pointer;
+} */
+
+.primary:hover {
+  background-color: #188ce8;
   cursor: pointer;
 }
 
@@ -200,9 +205,7 @@ p {
   cursor: pointer;
 }
 
-
 /* advantages */
-
 
 .advatages-list {
   display: flex;
@@ -247,16 +250,16 @@ p {
   margin-top: 50px;
 }
 
-
 /* team */
 
 .team {
-  background-color: var(--secondary-banner-color)
+  background-color: var(--secondary-banner-color);
 }
 
-.team .team-item{
+.team .team-item {
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -267,16 +270,15 @@ p {
 }
 
 .team-list .team-item {
-    width: 270px;
-    margin: 15px;
+  width: 270px;
+  margin: 15px;
 }
-
 
 .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center; 
+  text-align: center;
 }
 
 .team-title {
@@ -294,11 +296,9 @@ p {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.18;
-  text-align: center; 
+  text-align: center;
   margin-bottom: 30px;
 }
-
-
 
 /* footer */
 
@@ -315,9 +315,8 @@ p {
   margin-bottom: 9px;
 } */
 
-
 .footer-logo {
-  display: inline-block;  
+  display: inline-block;
   color: var(--accent-color);
 
   text-decoration: none;
@@ -327,8 +326,8 @@ p {
   line-height: 1.49;
 }
 
-.footer-color{
-  color: #000000;
+.footer-color {
+  color: #ffffff;
 
   text-decoration: none;
   font-family: 'Raleway';
@@ -336,7 +335,6 @@ p {
   font-size: 26px;
   line-height: 1.19;
 }
-
 
 .footer-title .link:hover,
 .footer-title .link:focus {
@@ -352,7 +350,6 @@ p {
   line-height: 1.71;
 }
 
-
 .footer-title {
   margin-top: 20px;
 }
@@ -361,7 +358,6 @@ p {
   margin-top: 9px;
 }
 
-
 .footer-title .mail-footer {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -369,7 +365,6 @@ p {
 /* portfolio css */
 
 /* button-nav */
-
 
 .button-nav {
   display: flex;
@@ -382,12 +377,9 @@ p {
 
 /* image section */
 
-
 .image {
   margin-top: 34px;
 }
-
-
 
 .image-title {
   color: var(--primary-text-color);
@@ -409,15 +401,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  }
-
-
-.image-list .flex-item {
-width: 370px;
-/* background-color: tomato; */
-margin: 15px;
 }
 
+.image-list .flex-item {
+  width: 370px;
+  /* background-color: tomato; */
+  margin: 15px;
+}
 
 .image-list:nth-child(3n) {
   margin-right: 0;
