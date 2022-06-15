@@ -53,20 +53,8 @@ p {
   padding-top: 94px;
 }
 
-/* logo */
-
-.logo {
-  color: var(--accent-color);
-
-  text-decoration: none;
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
-.logo-color {
-  color: #000000;
+img {
+  display: block;
 }
 
 /* site nav */
@@ -148,6 +136,8 @@ p {
 }
 
 .hero-title {
+  max-width: 696px;
+
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
@@ -155,59 +145,7 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-/* buttons */
-
-.button {
-  background-color: var(--accent-color);
-  color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 0;
-
-  min-width: 200px;
-  padding: 10px 32px 10px 32px;
-  vertical-align: middle;
-  text-align: center;
   margin: 0 auto;
-  margin-top: 30px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-}
-
-.button-secondary {
-  padding: 6px 22px;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  background: #f5f4fa;
-  border-radius: 4px;
-  border: 0;
-}
-
-/* .button:hover,
-:focus {
-  cursor: pointer;
-} */
-
-.primary:hover {
-  background-color: #188ce8;
-  cursor: pointer;
-}
-
-.button-secondary:hover {
-  background-color: var(--accent-color);
-  color: #ffffff;
-  cursor: pointer;
 }
 
 /* advantages */
@@ -218,6 +156,9 @@ p {
 }
 
 .advatages-list .item {
+  /* margin-right: 30px; */
+  max-height: 101px;
+
   width: calc((100% - 3 * 30px) / 4);
   margin: 15px;
   /* background-color: tomato; */
@@ -254,13 +195,22 @@ p {
 
 .section-list {
   display: flex;
-  margin: -15px;
 }
 
-.section-list .item {
+.section-list .item:nth-child(-n + 2) {
+  margin-right: 30px;
+  max-height: 386px;
+}
+
+/* .section-list {
+  display: flex;
+  margin: -15px;
+} */
+
+/* .section-list .item {
   width: calc((100% - 2 * 30px) / 3);
   margin: 15px;
-}
+} */
 
 /* team */
 
@@ -276,7 +226,7 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list {
+/* .team-list {
   display: flex;
   align-items: center;
   margin: -15px;
@@ -285,6 +235,14 @@ p {
 .team-list .team-item {
   width: 270px;
   margin: 15px;
+} */
+
+.team-list {
+  display: flex;
+}
+
+.team-list .team-item + .team-item {
+  margin-left: 30px;
 }
 
 .team-title {
@@ -425,4 +383,69 @@ p {
 
 .flex-item:nth-child(3n) {
   margin-right: 0;
+}
+
+/* logo */
+
+.logo {
+  color: var(--accent-color);
+
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-color {
+  color: #000000;
+}
+
+/* buttons */
+
+.button {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+
+  height: 50px;
+  min-width: 200px;
+  padding: 10px 32px 10px 32px;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.button-secondary {
+  padding: 6px 22px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: 0;
+}
+
+.primary:hover {
+  background-color: #188ce8;
+  cursor: pointer;
+}
+
+.button-secondary:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  cursor: pointer;
 }
