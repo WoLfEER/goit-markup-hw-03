@@ -281,7 +281,7 @@ img {
   background-color: var(--banner-color);
 }
 
-.footer .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -385,14 +385,6 @@ img {
   width: 370px;
   /* background-color: tomato; */
   margin: 15px;
-}
-
-.image-list:nth-child(3n) {
-  margin-right: 0;
-}
-
-.flex-item:nth-child(3n) {
-  margin-right: 0;
 }
 
 /* logo */
